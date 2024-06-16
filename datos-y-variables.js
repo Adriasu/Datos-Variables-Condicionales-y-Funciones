@@ -1,19 +1,18 @@
 // EJERCICIO 1
 
 const guests = prompt("Enter the number of guests");
-let totalPotatoes = guests * 200;
-let PotatoesKg = totalPotatoes / 1000;
-let totalEggs = (totalPotatoes * 5) / 1000;
-let totalOnion = (totalPotatoes * 300) / 1000;
+let totalPotatoes = (guests * 200)/1000;
+let totalEggs = (totalPotatoes * 5);
+let totalOnion = (totalPotatoes * 300);
 
 console.log(
-  `"Ejercicio 1": Para ${guests} Comensales se necesitará: ${PotatoesKg} Kg de papas, ${totalEggs} huevos, ${totalOnion} gr de cebolla.`
+  `"Ejercicio 1": Para ${guests} Comensales se necesitará: ${totalPotatoes} Kg de papas, ${totalEggs} huevos, ${totalOnion} gr de cebolla.`
 );
 
 // EJERCICIO 2
 
 const userNumber = prompt("Enter a number");
-let numberPair = userNumber % 2 === 0 && true;
+let numberPair = userNumber % 2 === 0;
 
 console.log(`"Ejercicio 2": ¿El número ${userNumber} es par? ${numberPair}"`);
 

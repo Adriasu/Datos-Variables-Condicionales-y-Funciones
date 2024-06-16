@@ -13,6 +13,16 @@ function sumNumbers(num1, num2) {
 // EJERCICIO 2
 
 function esPar(num) {
+  if (typeof num !== "number") {
+    return "Dato no valido";
+  } else if (num % 2 === 0) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+
+function esPar2(num) {
   if (typeof num === "number") {
     if (num % 2 === 0) {
       return "true";
@@ -76,5 +86,3 @@ function calculateBMI(weight, height) {
     `Su IMC es: ${resultBMI.toFixed(2)}, se encuentra con OBESIDAD.`;
   }
 }
-
-
